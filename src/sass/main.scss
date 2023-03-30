@@ -1,7 +1,19 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+@import './partials/about';
+@import './partials/blog';
+@import './partials/buttons';
+@import './partials/delivery';
+@import './partials/footer';
+@import './partials/general';
+@import './partials/header';
+@import './partials/hero';
+@import './partials/store';
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+body {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
