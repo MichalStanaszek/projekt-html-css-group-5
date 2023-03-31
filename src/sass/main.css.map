@@ -1,11 +1,1 @@
-{
-  "version": 3,
-  "sources": [
-    "partials/_general.scss",
-    "main.css",
-    "main.scss"
-  ],
-  "names": [],
-  "mappings": "AASA;EACE,WAAA;EACA,cAAA;EACA,eAAA;ACRF;;ACMA;EACE,cAAA;ADHF;;ACMA;EACE,cAAA;EACA,eAAA;EACA,YAAA;ADHF",
-  "file": "main.css"
-}
+{"version":3,"sources":["partials/_general.scss","main.css","main.scss"],"names":[],"mappings":"AASA;EACE,WAAA;EACA,cAAA;EACA,eAAA;ACRF;;ACMA;EACE,cAAA;ADHF;;ACMA;EACE,cAAA;EACA,eAAA;EACA,YAAA;ADHF","file":"main.css"}
