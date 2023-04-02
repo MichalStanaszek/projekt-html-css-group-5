@@ -28,3 +28,12 @@ ol {
   padding: 0;
   margin: 0;
 }
+a {
+  color: #000000;
+  &:link {
+    text-decoration: none;
+  }
+  &hover {
+    text-decoration: none;
+  }
+}
