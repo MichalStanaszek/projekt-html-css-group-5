@@ -9,6 +9,11 @@
 .header-section__logo {
   width: 45px;
   height: 35px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
 }
 .header-section__item2 {
   display: none;
@@ -22,8 +27,15 @@
   font-family: $font-primary;
   font-size: 20px;
   line-height: 24px;
-
-  color: #000000;
+}
+.header-nav__item {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color-brand;
+    transform: scale(1.05);
+    border-bottom: 1px solid $color-brand;
+  }
 }
 .header-section__item3 {
   display: flex;
@@ -33,6 +45,11 @@
 .header-section__tel {
   width: 22px;
   height: 22px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
 }
 .header-section__item4 {
   display: block;
@@ -54,6 +71,21 @@
 .menu-toggle__icon {
   width: 24px;
   height: 24px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
+}
+.menu-toggle__close {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
 }
 .menu-container {
   position: fixed;
@@ -90,6 +122,12 @@
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    border-bottom: 1px solid #ffffff;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1280px) {
   .header-section__item1 {
