@@ -146,7 +146,11 @@ a {
     stroke: #833ab4;
   }
 }
-
+.footer__logo-box {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
 .footer__logo-icon {
   width: 73px;
   height: 57px;
@@ -157,9 +161,5 @@ a {
   &:hover,
   &:focus {
     fill: $color-brand;
-  }
-
-  @media screen and (max-width: 1279px) {
-    display: none;
   }
 }
