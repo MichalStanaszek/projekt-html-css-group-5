@@ -76,7 +76,59 @@
       </li>
     </ul>
     <div class="button">
-      <button type="button" class="button__item">Order flowers</button>
+      <button type="button" class="button__item" data-modal-open>Order flowers</button>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal__close--item">
+            <use href="/src/images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__wrapper">
+          <p class="modal__header">Contact us</p>
+          <p class="modal__text">
+            If you have any additional questions or you want to clarify something before you make an
+            order please fill in your contact details. We will call you back.
+          </p>
+          <form>
+            <label for="user-name" class="modal__wrapper--input">
+              <p class="modal__text--item">Name</p>
+            </label>
+            <div class="modal__box">
+              <input
+                type="text"
+                name="name"
+                id="user-name"
+                minlength="2"
+                required
+                placeholder="Your name"
+                class="modal__box--input"
+              />
+            </div>
+
+            <label for="email" class="modal__wrapper--input">
+              <p class="modal__text--item">E-mail</p>
+            </label>
+            <div class="modal__box">
+              <input
+                type="email"
+                name="email"
+                minlength="3"
+                required
+                id="email"
+                placeholder="Your e-mail"
+                class="modal__box--input"
+              />
+            </div>
+
+            <div>
+              <button type="submit" class="modal__send">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
