@@ -1,6 +1,6 @@
 .delivery {
   display: flex;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 
   &__text {
     font-weight: 500;
@@ -32,7 +32,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     list-style-type: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 22px;
   }
