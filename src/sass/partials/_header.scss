@@ -97,7 +97,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateX(300%);
   transition: transform 250ms ease-in-out;
 }
 .menu-container.is-open {
