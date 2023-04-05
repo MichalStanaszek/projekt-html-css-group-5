@@ -165,8 +165,11 @@
 }
 
 .backdrop-thank-you__button {
-  background-color: #e86f54;
   margin-bottom: 142px;
+}
+.backdrop-contact-us__button:hover,
+.backdrop-thank-you__button:hover {
+  background-color: #e86f54;
 }
 .backdrop-thank-you__img {
   width: 188px;
