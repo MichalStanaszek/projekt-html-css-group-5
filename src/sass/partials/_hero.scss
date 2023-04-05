@@ -1,1 +1,276 @@
+.hero-section {
+  min-width: 288px;
+  padding-top: 5%;
+  height: 400px;
+  &__flex-box {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    text-align: center;
+  }
+  &__description {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 137px;
+    padding-right: 14px;
+  }
+  &__img {
+    width: 145px;
+    height: 274px;
+  }
+  &__button {
+    width: 64px;
+    height: 76px;
+    margin-top: 120px;
+    margin-left: 1px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 64px;
+    height: 76px;
+  }
+  &__header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 63.39px;
+    text-align: center;
+    margin-top: -30px;
+  }
+}
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.contact-us-div,
+.thank-you-div {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.backdrop-contact-us,
+.backdrop-thank-you {
+  width: 272px;
+  height: 400px;
+  background-color: #ffffff;
+}
+.backdrop-thank-you {
+  text-align: center;
+}
+.backdrop-contact-us__close-button,
+.backdrop-thank-you__close-button {
+  background-color: #ffffff;
+  border: none;
+  position: relative;
+  left: 200px;
+  top: 20px;
+  cursor: pointer;
+}
+.backdrop-thank-you__close-button {
+  left: 100px;
+}
+
+.backdrop-contact-us__header,
+.backdrop-thank-you__header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+  padding: 28px 0 14px;
+}
+.backdrop-contact-us__description,
+.backdrop-thank-you__description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #5c5c5c;
+  line-height: 14.63px;
+  margin-bottom: 18px;
+}
+.backdrop-contact-us__input {
+  width: 100%;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  border-radius: 8px;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  &:hover,
+  &:focus {
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+}
+.backdrop-contact-us__input:not(:placeholder-shown):required:valid {
+  border-color: #3cbc81;
+}
+
+.backdrop-contact-us__input:not(:placeholder-shown):required:invalid {
+  border-color: #e74a3b;
+}
+// .backdrop-contact-us__input:not(:placeholder-shown):required:valid ~ .backdrop-contact-us__button {
+//   background-color: #E86F54;
+// }
+.backdrop-contact-us__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.19px;
+  color: #5c5c5c;
+}
+
+// .backdrop-contact-us__icon {
+//   position: relative;
+//   left: 205px;
+//   bottom: 45px;
+// }
+
+.backdrop-contact-us__button,
+.backdrop-thank-you__button {
+  width: 100%;
+  height: 37px;
+  background-color: #e86f5440;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 28px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.backdrop-thank-you__button {
+  margin-bottom: 142px;
+}
+.backdrop-contact-us__button:hover,
+.backdrop-thank-you__button:hover {
+  background-color: #e86f54;
+}
+.backdrop-thank-you__img {
+  width: 188px;
+  height: 142px;
+  margin: 10px auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    margin: 0 16px 100px;
+    min-width: 720px;
+    height: 700px;
+
+    &__description {
+      font-size: 24px;
+      line-height: 29.26px;
+      padding-top: 270px;
+      padding-right: 110px;
+    }
+    &__button {
+      width: 145px;
+      height: 150px;
+      margin-top: 230px;
+      margin-left: 50px;
+    }
+    &__icon {
+      width: 145px;
+      height: 150px;
+    }
+    &__img {
+      width: 390px;
+      height: 636px;
+    }
+    &__header {
+      font-size: 120px;
+      line-height: 146.28px;
+      margin-top: -8%;
+    }
+  }
+  .backdrop-contact-us,
+  .backdrop-thank-you {
+    width: 480px;
+    height: 511px;
+
+    &__header {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 19.5px;
+    }
+    &__label {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__input {
+      height: 50px;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &__button {
+      height: 50px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__close-button {
+      position: relative;
+      left: 400px;
+    }
+  }
+  .backdrop-thank-you__close-button {
+    left: 200px;
+  }
+  .backdrop-thank-you__img {
+    width: 266px;
+    height: 202px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    min-width: 1232px;
+    height: 800px;
+    &__description {
+      font-size: 32px;
+      line-height: 39px;
+    }
+    &__icon {
+      width: 166px;
+      height: 166px;
+    }
+
+    &__header {
+      font-size: 160px;
+      line-height: 195px;
+      margin-top: -5.5%;
+    }
+  }
+}
