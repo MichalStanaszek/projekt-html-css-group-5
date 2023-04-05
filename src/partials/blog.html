@@ -51,14 +51,42 @@
     </div>
     <div class="blog-section__button-box">
       <p class="blog-section__title">Follow to our newsletter</p>
-      <button class="blog-section__button" data-modal-open>Subscribe</button>
-      <div class="modal is-hidden" data-modal>
-        <div class="modal-content">
-          <button class="modal-content__close" data-modal-close>
-            <svg class="modal-content__icon">
+      <button class="blog-section__button" data-modal-open4>Subscribe</button>
+      <div class="blog-section__backdrop is-hidden" data-modal4>
+        <div class="blog-section__modal">
+          <button class="blog-section__modal-close" data-modal-close4="">
+            <svg class="blog-section__modal-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <img
+            src="/src/images/blog/blog-modal-flower-272w.jpg"
+            srcset="
+              /src/images/blog/blog-modal-flower-272w.jpg    272w,
+              /src/images/blog/blog-modal-flower-272w@2x.jpg 544w
+            "
+            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, 136px"
+            alt="bukiet"
+          />
+          <form class="blog-section__modal-news">
+            <h3 class="blog-section__modal-news-tittle">Follow to our newsletter</h3>
+            <p class="blog-section__modal-news-text">
+              Be the first to get exclusive offers and the latest news on our product directly in
+              your box.
+            </p>
+            <label class="blog-section__modal-form">
+              Email
+              <input
+                class="blog-section__modal-form-input"
+                id="name-input"
+                name="name-input"
+                type="email"
+                required
+                placeholder="Your email"
+              />
+            </label>
+            <button class="blog-section__modal-button">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
