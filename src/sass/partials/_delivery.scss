@@ -1,11 +1,7 @@
 .delivery {
   display: flex;
+  font-family: 'Montserrat';
 
-  &__content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-  }
   &__text {
     font-weight: 500;
     font-size: 14px;
@@ -27,7 +23,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     margin-right: 8px;
     padding: 8px;
   }
@@ -41,19 +37,26 @@
     font-size: 22px;
   }
 }
-
+.delivery_content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
 .delivery__title {
   font-size: 24px;
   font-weight: 700;
   display: flex;
   align-items: center;
-
+  position: relative;
+  color: #000000;
+  line-height: 29px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
   &::after {
     content: '';
     border: 1px solid #000;
     flex-grow: 1;
     margin-left: 14px;
-    width: 330px;
   }
 }
 
@@ -69,13 +72,9 @@
   }
   .delivery__title {
     font-size: 44px;
-
-    &::after {
-      width: 550px;
-    }
   }
   .delivery__content {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
   }
   .delivery__text {
     width: 580px;
@@ -86,17 +85,12 @@
     margin-bottom: 40px;
   }
   .delivery__list {
-    margin-bottom: 25px;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: 1200px) {
   .delivery__text {
     width: 1200px;
-  }
-  .delivery__title {
-    &::after {
-      width: 1450px;
-    }
   }
 }
