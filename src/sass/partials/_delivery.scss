@@ -1,12 +1,48 @@
 .delivery {
   display: flex;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    width: 252px;
+    height: 34px;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  &__item {
+    border: 1px solid #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-right: 8px;
+    padding: 8px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 22px;
+  }
 }
-.delivery_content {
-  display: flex;
-  align-items: center;
-  margin-bottom: 32px;
-}
-.delivery_title {
+
+.delivery__title {
   font-size: 24px;
   font-weight: 700;
   display: flex;
@@ -20,45 +56,9 @@
     width: 330px;
   }
 }
-.delivery_text {
-  font-weight: 500;
-  font-size: 14px;
-  width: 252px;
-  height: 34px;
-}
-
-.delivery_img {
-  width: 100%;
-  margin-bottom: 60px;
-}
-
-.delivery_item {
-  border: 1px solid #000000;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 25px;
-  margin-right: 8px;
-  padding: 8px;
-}
-.delivery_list {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  list-style-type: none;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 22px;
-}
 
 @media (min-width: 768px) {
-  .delivery_item {
+  .delivery__item {
     width: 64px;
     height: 64px;
     font-size: 26px;
@@ -67,34 +67,34 @@
     margin-left: 8px;
     margin-bottom: 12px;
   }
-  .delivery_title {
+  .delivery__title {
     font-size: 44px;
 
     &::after {
-      width: 950px;
+      width: 550px;
     }
   }
-  .delivery_content {
+  .delivery__content {
     margin-bottom: 59px;
   }
-  .delivery_text {
+  .delivery__text {
     width: 580px;
     padding-top: 13px;
     font-size: 24px;
   }
-  .delivery_img {
+  .delivery__img {
     margin-bottom: 40px;
   }
-  .delivery_list {
+  .delivery__list {
     margin-bottom: 25px;
   }
 }
 
-@media (min-width: 1280px) {
-  .delivery_text {
+@media (min-width: 1200px) {
+  .delivery__text {
     width: 1200px;
   }
-  .delivery_title {
+  .delivery__title {
     &::after {
       width: 1450px;
     }
