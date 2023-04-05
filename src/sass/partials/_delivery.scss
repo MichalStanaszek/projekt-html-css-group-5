@@ -52,6 +52,7 @@
   line-height: 29px;
   margin-bottom: 32px;
   text-transform: uppercase;
+  z-index: -1;
   &::after {
     content: '';
     border: 1px solid #000;
