@@ -9,7 +9,6 @@
     text-align: center;
   }
   &__description {
-    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 17px;
@@ -19,6 +18,8 @@
   &__img {
     width: 145px;
     height: 274px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   &__button {
     width: 64px;
@@ -89,7 +90,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24.38px;
-  padding: 28px 0 14px;
+  padding: 15px 0 14px;
 }
 .backdrop-contact-us__description,
 .backdrop-thank-you__description {
@@ -130,9 +131,6 @@
 .backdrop-contact-us__input:not(:placeholder-shown):required:invalid {
   border-color: #e74a3b;
 }
-// .backdrop-contact-us__input:not(:placeholder-shown):required:valid ~ .backdrop-contact-us__button {
-//   background-color: #E86F54;
-// }
 .backdrop-contact-us__label {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
@@ -140,13 +138,6 @@
   line-height: 12.19px;
   color: #5c5c5c;
 }
-
-// .backdrop-contact-us__icon {
-//   position: relative;
-//   left: 205px;
-//   bottom: 45px;
-// }
-
 .backdrop-contact-us__button,
 .backdrop-thank-you__button {
   width: 100%;
@@ -186,13 +177,14 @@
       font-size: 24px;
       line-height: 29.26px;
       padding-top: 270px;
-      padding-right: 110px;
+      padding-right: 80px;
     }
     &__button {
       width: 145px;
       height: 150px;
       margin-top: 230px;
-      margin-left: 50px;
+      margin-left: 40px;
+      padding-right: 180px;
     }
     &__icon {
       width: 145px;
