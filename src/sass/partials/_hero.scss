@@ -1,3 +1,4 @@
+@import '../partials/general';
 .hero-section {
   min-width: 288px;
   padding-top: 5%;
@@ -5,7 +6,6 @@
   &__flex-box {
     display: flex;
     justify-content: center;
-    padding-left: 50px;
     text-align: center;
   }
   &__description {
@@ -13,13 +13,12 @@
     font-size: 14px;
     line-height: 17px;
     padding-top: 137px;
-    padding-right: 14px;
   }
   &__img {
     width: 145px;
     height: 274px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 1px;
   }
   &__button {
     width: 64px;
@@ -49,10 +48,20 @@
   visibility: hidden;
   pointer-events: none;
 }
+.contact-us-icon-close {
+  color: #000000;
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $color-brand;
+  }
+}
 .contact-us-div,
 .thank-you-div {
   position: fixed;
-  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -64,8 +73,8 @@
 }
 .backdrop-contact-us,
 .backdrop-thank-you {
+  position: relative;
   width: 272px;
-  height: 400px;
   background-color: #ffffff;
 }
 .backdrop-thank-you {
@@ -73,12 +82,11 @@
 }
 .backdrop-contact-us__close-button,
 .backdrop-thank-you__close-button {
+  position: absolute;
+  right: 9px;
+  top: 9px;
   background-color: #ffffff;
   border: none;
-  position: relative;
-  left: 200px;
-  top: 20px;
-  cursor: pointer;
 }
 .backdrop-thank-you__close-button {
   left: 100px;
@@ -90,7 +98,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24.38px;
-  padding: 15px 0 14px;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
 .backdrop-contact-us__description,
 .backdrop-thank-you__description {
@@ -169,7 +178,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    margin: 0 16px 100px;
+    margin-bottom: 100px;
     min-width: 720px;
     height: 700px;
 
@@ -177,13 +186,13 @@
       font-size: 24px;
       line-height: 29.26px;
       padding-top: 270px;
-      padding-right: 80px;
+      margin-left: 73px;
     }
     &__button {
       width: 145px;
       height: 150px;
       margin-top: 230px;
-      margin-left: 40px;
+      margin-left: 20px;
       padding-right: 180px;
     }
     &__icon {
@@ -193,6 +202,7 @@
     &__img {
       width: 390px;
       height: 636px;
+      margin-left: 40px;
     }
     &__header {
       font-size: 120px;
@@ -203,7 +213,6 @@
   .backdrop-contact-us,
   .backdrop-thank-you {
     width: 480px;
-    height: 511px;
 
     &__header {
       font-size: 32px;
@@ -233,14 +242,14 @@
       line-height: 22px;
     }
 
-    &__close-button {
-      position: relative;
-      left: 400px;
-    }
+    // &__close-button {
+    //   position: relative;
+    //   left: 400px;
+    // }
   }
-  .backdrop-thank-you__close-button {
-    left: 200px;
-  }
+  // .backdrop-thank-you__close-button {
+  //   left: 200px;
+  // }
   .backdrop-thank-you__img {
     width: 266px;
     height: 202px;
