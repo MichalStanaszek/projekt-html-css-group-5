@@ -141,6 +141,10 @@
   transform: translateY(0);
   background-color: white;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 566px;
+    height: 644px;
+  }
 }
 .blog-section__backdrop {
   position: fixed;
@@ -185,10 +189,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 240px;
   height: 213px;
   margin-left: 16px;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 566px;
+    height: 644px;
+    margin-left: 0px;
+  }
 }
 .blog-section__modal-news-tittle {
   font-family: $font-primary;
@@ -197,6 +208,11 @@
   line-height: 23px;
   text-align: center;
   margin-bottom: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
 }
 .blog-section__modal-news-text {
   font-family: $font-primary;
@@ -205,6 +221,11 @@
   text-align: center;
   color: #5c5c5c;
   margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
 }
 .blog-section__modal-form {
   font-weight: 500;
@@ -214,6 +235,9 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .blog-section__modal-form-input {
   width: 236px;
@@ -236,6 +260,11 @@
     font-size: 12px;
     line-height: 15px;
     color: rgba(0, 0, 0, 0.3);
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 49px;
+    margin-bottom: 28px;
   }
 }
 .blog-section__modal-button {
@@ -261,6 +290,8 @@
     opacity: 0.8;
   }
   @media screen and (min-width: 768px) {
-    padding: 20px 69.5px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 122px;
   }
 }
