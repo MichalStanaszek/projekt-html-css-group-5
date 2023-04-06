@@ -76,7 +76,13 @@
   @media screen and (min-width: 768px) {
     padding: 20px 69.5px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 24px;
+    padding: 20px 69.5px;
+  }
 }
+
 .blog-section__images {
   display: flex;
   justify-content: center;
