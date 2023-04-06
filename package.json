@@ -5,7 +5,7 @@
   "homepage": "https://MichalStanaszek.github.io/projekt-html-css-group-5",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url projekt-html-css-group-5"
+    "build": "parcel build src/*.html --public-url /projekt-html-css-group-5/"
   },
   "repository": {
     "type": "git",
